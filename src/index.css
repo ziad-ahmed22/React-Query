@@ -1,0 +1,74 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin-top: 0;
+}
+
+.nav {
+  border-bottom: 2px solid white;
+  position: sticky;
+  top: 0;
+  background-color: #242424;
+}
+.nav a {
+  display: inline-block;
+  margin: 10px;
+  padding: 2px 0;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav a.active {
+  color: tomato;
+  border-bottom: 2px solid tomato;
+}
+
+button {
+  cursor: pointer;
+  padding: 3px 8px;
+  outline: none;
+  border: none;
+  background-color: teal;
+}
+button:disabled {
+  cursor: not-allowed;
+  color: white;
+  opacity: 0.4;
+}
+button.active {
+  background-color: tomato;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+form input {
+  padding: 3px 8px;
+  outline: none;
+}
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.596);
+  letter-spacing: 2px;
+}
+
+th,
+td {
+  padding: 2px 20px;
+  text-align: center;
+}
